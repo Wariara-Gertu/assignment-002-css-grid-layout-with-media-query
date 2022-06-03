@@ -1,0 +1,55 @@
+title{
+    font-style: italic;
+}
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.8fr 1.1fr 0.8fr;
+    grid-template-rows: 0.6fr  0.6fr 0.6fr  ;
+
+     grid-template-areas: 
+     "content1 main content2"
+     "content3 li li"
+     "content3 li li"
+     "content3 li li"
+     "content3 li li"
+     "content3 li li"
+
+    ;
+
+
+}
+#content1{
+    background-color: white;
+    grid-area: content1;
+}
+#content1 h3{
+    font-style: italic;
+}
+#content2{
+    background-color: white;
+    grid-area: content2;
+}
+#content2 h3{
+    font-style: italic;
+}
+main{
+    background-color: white;
+    grid-area: main; 
+}
+img{
+width: 80%;
+height: 40vh;
+grid-area: main;
+}
+
+main h3{
+    font-style: italic;
+}
+#content3{
+    background-color: white;
+    grid-area: content3;
+}
+#content3 h3{
+    font-style: italic;
+}
