@@ -1,19 +1,22 @@
-title{
+h1{
     font-style: italic;
+    font-weight: 100;
+    font-size: larger;
+    text-align: center;
 }
 .container{
     display: grid;
     height: 100vh;
-    grid-template-columns: 0.8fr 1.1fr 0.8fr;
-    grid-template-rows: 0.6fr  0.6fr 0.6fr  ;
+    grid-template-columns: 0.5fr 0.9fr 0.5fr;
+    grid-template-rows: 1fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr  ;
 
      grid-template-areas: 
      "content1 main content2"
-     "content3 li li"
-     "content3 li li"
-     "content3 li li"
-     "content3 li li"
-     "content3 li li"
+     "content3 politics politics"
+     "content3 technology technology"
+     "content3 locals locals"
+     "content3 opinions opinions"
+     "content3 sports sports"
 
     ;
 
@@ -22,20 +25,26 @@ title{
 #content1{
     background-color: white;
     grid-area: content1;
+    border: solid 1px;
+
 }
 #content1 h3{
     font-style: italic;
+    text-align: center;
 }
 #content2{
     background-color: white;
     grid-area: content2;
+    border: solid 1px;
 }
 #content2 h3{
     font-style: italic;
+    text-align: center;
 }
 main{
     background-color: white;
     grid-area: main; 
+    border: solid 1px;
 }
 img{
 width: 80%;
@@ -45,11 +54,60 @@ grid-area: main;
 
 main h3{
     font-style: italic;
+    text-align: center;
 }
 #content3{
     background-color: white;
     grid-area: content3;
+    border: solid 1px;
 }
 #content3 h3{
     font-style: italic;
+    text-align: center;
+}
+#politics{
+    background-color:yellow ;
+    grid-area: politics;
+    border: solid 1px;
+
+    
+}
+#technology{
+    background-color: lightskyblue;
+    grid-area: technology;
+    border: solid 1px;
+}
+#locals{
+   background-color: blue; 
+   grid-area: locals;
+   border: solid 1px;
+}
+#opinions{
+    background-color: darkolivegreen ;
+    grid-area: opinions;
+    border: solid 1px;
+}
+#sports{
+    background-color:darkmagenta ;
+    grid-area: sports;
+    border: solid 1px;
+}
+@media(max-width:567px){
+        .container{
+     grid-template-columns: 1fr;
+     grid-template-rows: 2fr 3fr 2fr 2fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr ;
+     grid-template-areas:
+         "content1"
+         "main"
+         "content2"
+        "content3"
+        "politics"
+        "technology"
+        "locals"
+        "opinions"
+        "sports"
+;
+        }
+   
+    
 }
